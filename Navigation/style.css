@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(36, 33, 33);
+}
+
+.container {
+  background-color: antiquewhite;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  padding: 60px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: crimson;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: rgb(219, 212, 212);
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+nav {
+  position: fixed;
+  bottom: 200px;
+  left: 0px;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  color: aliceblue;
+}
+
+nav ul li {
+  margin-top: 10px;
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li+li {
+  margin-left: 15px;
+}
+
+nav ul li+li+li {
+  margin-left: 30px;
+}

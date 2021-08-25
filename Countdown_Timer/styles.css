@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+*{
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url('scene (4).jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.countdown_con{
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    font-size:33px;
+
+}
+.big_txt{
+    font-size: 84px;
+    margin: 84px;
+    line-height: 0;
+}

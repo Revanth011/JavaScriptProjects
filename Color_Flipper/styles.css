@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.container h3 {
+    color: white;
+    background-color: black;
+}
+
+.btn {
+    font-size: 20px;
+}
